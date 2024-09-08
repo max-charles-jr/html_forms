@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS my_form;
+
+USE my_form;
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    address VARCHAR(100) NOT NULL,
+    telephone VARCHAR(15) NOT NULL,
+    age INT(3) NOT NULL
+);
